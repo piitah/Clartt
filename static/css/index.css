@@ -1,0 +1,85 @@
+/* ============================
+login & signup styles
+=========================== */
+.body-wrapper1{
+     background: linear-gradient(
+      to bottom right,
+      rgb(55, 85, 176),
+      rgb(0, 143, 218),
+      rgb(3, 195, 218)
+    );
+    background: -webkit-linear-gradient(
+      to bottom right,
+      rgb(55, 85, 176),
+      rgb(0, 143, 218),
+      rgb(3, 195, 218)
+    );
+    bottom : 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+}
+.body-wrapper2{
+    background-image: url('../../static/imgs/cb.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom : 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.main-body {
+    position: relative;
+    z-index: 999;
+}
+.curve{
+    width: 92% !important;
+    font-size: 15px !important;
+    border-radius: 3rem !important;
+    color: #fff !important;
+    background-color: #375592 !important;
+}
+
+.curve2{
+    width: 100% !important;
+    font-size: 15px !important;
+    border-radius: 3rem !important;
+    color: #fff !important;
+    background-color: #375592 !important;
+}
+.curve:active, .curve2:active{
+    outline: none!important;
+    border: none !important;
+}
+
+.text-bold {
+    font-weight: 500;
+}
+
+.login-wrapper{
+    background-color: white !important;
+    width: 100%;
+    margin-top: 3.3%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0rem 0.1rem 0.5rem 0rem #999999;
+    z-index: 9999999999999;
+}
+.main-header{
+    text-align: center;
+}
+.logo-img-resize{
+    width: 150px !important;
+    height: auto;
+}
+.footer-text{
+    color: white;
+}
+.hd1{
+    font-weight: 500;
+    font-family: Camphor, Open Sans, Segoe UI, san-serif !important;
+    font-size: 1.6rem;
+}

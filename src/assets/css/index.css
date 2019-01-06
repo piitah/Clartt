@@ -1,0 +1,31 @@
+/* ============================
+login & signup styles
+=========================== */
+.body-wrapper{
+    /* background-image: url('../../src/assets/imgs/clartt_bg.jpg');
+    background-size: cover;
+    background-position: top; */
+    background-color: red;
+}
+
+.login-wrapper{
+    background-color: white !important;
+    width: 100%;
+    margin-top: 3.3%;
+    padding: 24px 24px 36px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0rem 0.1rem 0.5rem 0rem #999999;
+}
+.main-header{
+    text-align: center;
+}
+.logo-img-resize{
+    width: 150px !important;
+    height: auto;
+}
+.hd1{
+    font-weight: 500;
+    font-family: Camphor, Open Sans, Segoe UI, san-serif !important;
+    font-size: 1.6rem;
+}

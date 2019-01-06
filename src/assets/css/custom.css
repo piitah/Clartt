@@ -1,0 +1,333 @@
+/* =====================================================
+dashboard styling
+========================================================*/
+
+.main_wrapper{
+    background-color: #ffffff;
+    border-top: 2px solid #375592;
+    height: auto;
+    padding: 0 !important;
+    box-shadow: 0rem 0.1rem 0.3rem #999999;
+    border-radius: 4px;
+    margin-top: -1.4rem !important
+}
+.user_card{
+    padding: 1.5rem;
+    box-shadow: 0rem 0.1rem 0.3rem #999999;
+    border-radius: 5px;
+}
+.title-header{
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.v-list__tile__title{
+    color:#333 !important;
+}
+.user_notice{
+    padding: 2rem 5.5rem;
+    background-color: #375592;
+    color: #ffffff;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0rem 0.1rem 0.3rem #999999;
+}
+.user_transaction{
+    box-shadow: 0rem 0.1rem 0.3rem #999999;
+    border-radius: 5px;
+}
+.recent-transactions{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0rem 0.1rem 0.3rem #999999;
+    color: #666666 !important;
+}
+.recent-transactions li{
+    padding: .8em .3em
+}
+.recent-transactions li:hover{
+    background-color: #eeeeee !important;
+    cursor: pointer;
+}
+.recent-transactions li:nth-last-of-type(odd) {
+    background-color: #f7f7f7;
+}
+.recent-transactions li:nth-last-of-type(even) {
+    background-color: #ffffff;
+}
+
+.trans-amount, .trans-status, .trans-recipient {
+    float: left;
+}
+
+.trans-status{
+    width: 12%;
+    text-align: center;
+    margin-top: .8em;
+}
+
+.trans-status .icon {
+    font-size: 18px;
+}
+
+.trans-amount{
+    width: 55%;
+    font-weight: 600;
+    font-size: 15px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.trans-amount span{
+    display: block;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.trans-recipient {
+    width: 33%;
+    font-weight: 500;
+    float: right !important;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.v-text-field__slot input[type="text"], .v-text-field__slot input[type="email"] {
+    font-size: 35px !important;
+    /* color: rgba(99, 97, 97, 0.9) !important; */
+    color: red;
+    font-weight: 500 !important;
+}
+
+.trans-recipient span{
+    display: block;
+    font-size: 13px;
+}
+.trans-btn{
+    font-size:13px !important;
+    text-transform: inherit
+}
+.trans-details-wrapper{
+    margin: 0px !important;
+    padding: 0px !important;
+}
+.trans-details-header{
+    background-image: linear-gradient(to right bottom, #b8b8b8);
+    color: #ffffff;
+    margin: 0px;
+    padding:0px;
+
+}
+.action-btn{
+    font-size:13px !important;
+    text-transform: inherit
+}
+.user{
+    list-style: none;
+    display: block;
+    align-items: center;
+}
+.user li{
+    display: inline-block;
+    align-items: center;
+    box-sizing: border-box
+}
+.btn-primary{
+     border-radius: 3rem !important;
+    color: #fff !important;
+    background-color: #375592 !important;
+}
+.btn-secondary{
+    background-image: linear-gradient(to right bottom, #375592,
+     rgba(28, 166, 190, 0.76)) !important;
+     color:#ffffff!important;
+}
+.btn-primary1{
+     border-radius: 3rem !important;
+    color: #fff !important;
+}
+.btn-text:link,
+.btn-text:visited {
+  color: #375592 !important;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #375592;
+  padding: 3px;
+  font-size: 14px;
+  transition: all 0.4s;
+}
+.btn-text:hover {
+  background-color: #375592;
+  color: #fff !important;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+.btn-text:active {
+  transform: translateY(0);
+  box-shadow: 0 5rem 8rem rgba(0, 0, 0, 0.2);
+}
+.spinner{
+    margin : 100px auto 0;
+    width: 70px;
+    text-align: center;
+}
+.spinner > div {
+    width: 18px;
+    height: 18px;
+    background-color: #333;
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+.spinner .bounce1{
+    -webkit-animation-delay:  -0.32s;
+    animation-delay: -0.32s;
+}
+@-webkit-keyframes sk-bouncedelay {
+    0%, 80%, 100% {
+        -webkit-transfrom: scale(0)
+    }40%{
+        -webkit-transform: scale(1.0)
+    }
+}
+@keyframes sk-bouncedelay {
+    0%, 80%, 100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }40%{
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0)
+    }
+}
+
+@media only screen and (min-width : 768px) {
+    .wrapper-primary {
+        padding: 1.5em;
+    }
+}
+
+@media only screen and (max-width : 991px) {
+    .wrapper-primary {
+        padding: 1em 3px 3px 3px;
+        margin-top: 4px;
+
+    }
+}
+
+/** styles for transaction details **/
+.trans-body {
+  max-width: 600px;
+  border-radius: 6px;
+  line-height: 25px;
+}
+@media only screen and (max-width: 768px) {
+  .trans-amount2 {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .trans-body {
+    padding: 2em 1em;
+  }
+  .trans-amount2 i {
+    font-size: 25px !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .trans-amount2 {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .trans-body {
+    padding: 2em !important;
+  }
+
+  .trans-amount2 i {
+    margin-right: .1em;
+    font-size: 40px !important;
+  }
+}
+
+.trans-amount2 span {
+  color: #6f6f6f;
+}
+
+.trans-type {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 25px;
+  font-family: Roboto;
+  margin-top: .5em;
+  letter-spacing: 3px;
+  text-align: center;
+}
+.trans-info {
+  margin-top: .6em;
+  font-weight: 500;
+}
+.info-title {
+  color: #375592;
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: .5em;
+}
+.info-data {
+  margin-top: .3em;
+  font-weight: 500;
+}
+.divider {
+  border-top: 3px solid #375592;
+}
+.info-tabs {
+  padding: 1em 0;
+  font-size: 15px;
+}
+
+/*** end of style for transaction details **/
+
+
+/* =================================
+    add card styling
+===================================*/
+.add-card-wrapper{
+    background-color: #ffffff;
+    box-shadow: 0rem 0.1rem 0.3rem #999999;
+    border-radius: 6px;
+    border: 1px solid #eeeeee;
+    padding: 1rem;
+}
+.add-card-content p {
+    font-weight: 500;
+    font-size: 15px;
+}
+.add-card-content .btn-left{
+    
+}
+.trans-filter {
+    display: inline-block;
+    width: 100%;
+}
+.filter {
+    font-weight: 500;
+    font-size: 16px;
+}
+.filter-bg{
+    background-color: #eeeeee;
+}
+@media only screen and (max-width: 768px) {
+    .filter-mid{
+        width: 100% !important;
+    }
+    .filter-mid-btn{
+        width: 100% !important;
+        margin: 3px !important;
+        
+    }
+}
